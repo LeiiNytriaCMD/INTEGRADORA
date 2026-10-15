@@ -1,0 +1,269 @@
+/* ==========================================================================
+   HOJA DE ESTILOS CSS3: NEXUS
+   ========================================================================== */
+
+/* 1. Selector de Elemento Universal y Modelo de Caja */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f6;
+  color: #333333;
+}
+
+/* 2. Encabezado (Header) */
+header {
+  background: linear-gradient(135deg, #1b365d, #006688);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Selector de clase: Contenedor del reloj */
+.reloj-contenedor {
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ff9900;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid #ff9900;
+}
+
+/* 3. Menú de Navegación Sticky con Flexbox */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #006688;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Selector descendiente */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  display: block;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Pseudoclase :hover */
+nav a:hover {
+  background-color: #1b365d;
+  color: #ff9900;
+}
+
+/* 4. Contenedor Principal (Main) y Secciones (IDs) */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #1b365d;
+  margin-bottom: 1.2rem;
+  border-bottom: 3px solid #006688;
+  padding-bottom: 0.5rem;
+}
+
+/* Sección Hero / Inicio */
+.hero-seccion {
+  text-align: center;
+  background-color: #eef5f8;
+  padding: 3rem 1.5rem;
+}
+
+/* 5. Tarjetas con Flexbox (.servicios-contenedor y .tarjetas-contenedor) */
+.servicios-contenedor,
+.tarjetas-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.tarjeta {
+  flex: 1 1 240px;
+  max-width: 320px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Selector descendiente en tarjetas */
+.tarjeta h3 {
+  color: #006688;
+  margin-bottom: 0.8rem;
+}
+
+/* Formato de marcas de texto */
+mark {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.info-adicional {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #666666;
+}
+
+/* 6. Formulario de Contacto */
+.campo-grupo {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #1b365d;
+  margin-bottom: 0.4rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Pseudoclase :focus para Usabilidad */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #006688;
+  box-shadow: 0 0 6px rgba(0, 102, 136, 0.4);
+}
+
+/* Botones */
+.botones-grupo {
+  display: flex;
+  gap: 1rem;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-hero {
+  background-color: #ff9900;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.boton-hero:hover {
+  background-color: #e08600;
+}
+
+.btn-enviar {
+  background-color: #006688;
+  color: #ffffff;
+}
+
+.btn-enviar:hover {
+  background-color: #1b365d;
+}
+
+.btn-limpiar {
+  background-color: #e0e0e0;
+  color: #333333;
+}
+
+.btn-limpiar:hover {
+  background-color: #cccccc;
+}
+
+/* 7. Media Query para Dispositivos Móviles (máximo 768px) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .servicios-contenedor,
+  .tarjetas-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .botones-grupo {
+    flex-direction: column;
+  }
+}
+
+/* 8. Pie de Página (Footer) */
+footer {
+  background-color: #1b365d;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+footer h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
