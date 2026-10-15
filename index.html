@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexus - Innovación y soporte tecnológico para la comunidad">
+  <meta name="keywords" content="soporte técnico, desarrollo web, redes, nube, tecnología">
+  <title>Nexus - Soluciones Tecnológicas</title>
+  <!-- Vinculación de Hoja de Estilos externa (Práctica 2) -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Vinculación de Script JS diferido (Práctica 3) -->
+  
+</head>
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header>
+    <h1>Nexus</h1>
+    <p>Innovación y soporte tecnológico para la comunidad</p>
+    <!-- Reloj dinámico en vivo (Práctica 3) -->
+    <div id="reloj" class="reloj-contenedor">--:--:-- --</div>
+  </header>
+
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- SECCIÓN INICIO / HERO -->
+    <section id="inicio" class="hero-seccion">
+      <h2>Soluciones Tecnológicas para tu Organización</h2>
+      <p>Ofrecemos <strong>soporte especializado</strong> y desarrollo de vanguardia para impulsar tus proyectos.</p>
+      <a href="#servicios" class="boton boton-hero" id="btnHero">Conoce nuestros servicios</a>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros">
+      <h2>Sobre Nosotros</h2>
+      <div class="tarjetas-contenedor">
+        <article class="tarjeta">
+          <h3>Misión</h3>
+          <p>Proporcionar <em>soluciones digitales eficientes</em> que impulsen el crecimiento tecnológico continuo de nuestros clientes.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Visión</h3>
+          <p>Ser referentes en la región por nuestra excelencia en desarrollo, infraestructura de redes y servicios cloud.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios">
+      <h2>Nuestros Servicios</h2>
+      <div class="servicios-contenedor">
+        <article class="tarjeta">
+          <h3>Soporte Técnico</h3>
+          <p>Atención profesional para mantenimiento preventivo y correctivo de equipo informático.</p>
+          <p><mark>Disponible de lunes a viernes.</mark></p>
+        </article>
+        <article class="tarjeta">
+          <h3>Desarrollo Web</h3>
+          <p>Creación de sitios y aplicaciones web adaptables, rápidas, modernas y seguras.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Redes y Conectividad</h3>
+          <p>Diseño, instalación y optimización de infraestructura de redes locales y empresariales.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Servicios en la Nube</h3>
+          <p>Migración, gestión y respaldo de información con alta disponibilidad en la nube.</p>
+        </article>
+      </div>
+
+      <!-- Información Complementaria (aside) -->
+      <aside class="info-adicional">
+        <p><small>Nota: Todos nuestros servicios cuentan con póliza de garantía y atención personalizada.</small></p>
+      </aside>
+    </section>
+
+    <!-- SECCIÓN FORMULARIO DE CONTACTO -->
+    <section id="contacto">
+      <h2>Formulario de Contacto</h2>
+      <form id="formularioContacto">
+        <div class="campo-grupo">
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="6560000000">
+        </div>
+
+        <div class="campo-grupo">
+          <label for="servicio">Servicio de Interés:</label>
+          <select id="servicio" name="servicio" required>
+            <option value="">-- Selecciona un servicio --</option>
+            <option value="soporte">Soporte Técnico</option>
+            <option value="web">Desarrollo Web</option>
+            <option value="redes">Redes y Conectividad</option>
+            <option value="nube">Servicios en la Nube</option>
+          </select>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+        </div>
+
+        <div class="botones-grupo">
+          <button type="submit" class="boton btn-enviar" id="btnEnviar">Enviar Mensaje</button>
+          <button type="reset" class="boton btn-limpiar" id="btnLimpiar">Limpiar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+<script src="script.js" defer></script>
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <h3>&copy; 2026 Nexus. Todos los derechos reservados.</h3>
+  </footer>
+
+</body>
+</html>
